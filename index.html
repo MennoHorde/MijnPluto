@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl" ng-app="MijnPluto">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mijn Pluto</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/vendors/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <mp-page-nav></mp-page-nav>
+
+    <div ui-view></div>
+
+    <!-- Load Js libs -->
+    <script src="assets/libs/jquery-2.1.4.js"></script>
+    <script src="assets/libs/bootstrap.js"></script>
+    <script src="assets/libs/angular.js"></script>
+    <script src="assets/libs/angular-ui-router.js"></script>
+    <script src="assets/libs/angular-resource.js"></script>
+
+    <!-- App -->
+    <script src="app/app.module.js"></script>
+    <script src="app/app.routes.js"></script>
+
+    <!-- Controllers -->
+    <script src="app/components/diensten/DienstenIndexController.js"></script>
+    <script src="app/components/diensten/DienstenEditController.js"></script>
+    <script src="app/components/diensten/DienstenCreateController.js"></script>
+    <script src="app/components/help/HelpIndexController.js"></script>
+    <script src="app/components/login/LoginIndexController.js"></script>
+
+    <!-- Directives -->
+    <script src="app/shared/navigation/mpPageNav.js"></script>
+
+    <!-- Services & Filters -->
+    <script src="app/components/diensten/DienstenService.js"></script>
+    <script src="app/shared/AuthService.js"></script>
+    <script src="app/shared/DatetimeFilter.js"></script>
+</body>
+</html>
